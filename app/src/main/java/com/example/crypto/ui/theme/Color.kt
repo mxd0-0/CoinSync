@@ -2,6 +2,8 @@ package com.example.crypto.ui.theme
 
 import androidx.compose.ui.graphics.Color
 
+
+
 val primaryLight = Color(0xFF062E15)
 val onPrimaryLight = Color(0xFFFFFFFF)
 val primaryContainerLight = Color(0xFF1F4529)
