@@ -13,5 +13,4 @@ fun CoinDto.toCoin(): Coin {
         priceUsd = priceUsd,
         changePercent24Hr = changePercent24Hr
     )
-
 }

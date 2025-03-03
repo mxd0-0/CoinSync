@@ -89,7 +89,7 @@ private fun CoinListItemPrev() {
 }
 
 val previewCoinUI = Coin(
-    id = 1.toString(),
+    id = "1",
     rank = 1,
     name = "Bitcoin",
     symbol = "BTC",
