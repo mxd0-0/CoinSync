@@ -6,7 +6,7 @@ import com.example.crypto.crypto.presentation.coin_list.components.toDisplayable
 import com.example.crypto.core.presentation.util.getDrawableIdForCoin
 
 data class CoinUI(
-    val id: Int,
+    val id: String,
     val rank: Int,
     val name: String,
     val symbol: String,

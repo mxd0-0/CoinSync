@@ -20,12 +20,12 @@ android {
         vectorDrawables {
             useSupportLibrary = true
         }
+
     }
 
     buildTypes {
         debug {
-            buildConfigField("String","BASE_URL","\"https://api.coincap.io/v2\"")
-
+            buildConfigField("String", "BASE_URL", "\"https://api.coincap.io/v2/\"")
         }
         release {
             isMinifyEnabled = false
@@ -33,7 +33,7 @@ android {
                 getDefaultProguardFile("proguard-android-optimize.txt"),
                 "proguard-rules.pro"
             )
-            buildConfigField("String","BASE_URL","\"https://api.coincap.io/v2\"")
+            buildConfigField("String", "BASE_URL", "\"https://api.coincap.io/v2/\"")
         }
     }
     compileOptions {
