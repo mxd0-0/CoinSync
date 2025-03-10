@@ -1,6 +1,8 @@
 package com.example.crypto.crypto.domain
 
+import java.time.ZonedDateTime
+
 data class CoinPrice(
     val priceUsd : Double,
-    val dateTime: Long,
+    val dateTime: ZonedDateTime,
 )

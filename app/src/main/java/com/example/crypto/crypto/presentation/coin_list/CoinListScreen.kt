@@ -22,9 +22,9 @@ import com.example.crypto.ui.theme.CryptoTheme
 @Composable
 fun CoinListScreen(
     state: CoinListState,
+    onAction : (CoinListAction) -> Unit = {},
     modifier: Modifier = Modifier,
 ) {
-
     if (state.isLoading) {
         Box(
             modifier = modifier.fillMaxSize(), contentAlignment = Alignment.Center
