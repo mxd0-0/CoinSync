@@ -42,7 +42,7 @@ fun InfoCard(
         color = contentColor
     )
     Card(
-        modifier = modifier
+       /* modifier = modifier
             .padding(8.dp)
             .shadow(
                 elevation = 15.dp,
@@ -54,6 +54,23 @@ fun InfoCard(
         border = BorderStroke(
             width = 1.dp,
             color = MaterialTheme.colorScheme.primary
+        ),
+        colors = CardDefaults.cardColors(
+            containerColor = MaterialTheme.colorScheme.surfaceContainer,
+            contentColor = contentColor
+        )*/
+        modifier= modifier
+            .padding(8.dp)
+            .shadow(
+                15.dp,
+                shape = RectangleShape,
+                ambientColor = MaterialTheme.colorScheme.primary,
+                spotColor =  MaterialTheme.colorScheme.primary
+            ),
+        shape = RectangleShape,
+        border = BorderStroke(
+            width = 1.dp,
+            MaterialTheme.colorScheme.primary
         ),
         colors = CardDefaults.cardColors(
             containerColor = MaterialTheme.colorScheme.surfaceContainer,
