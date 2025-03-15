@@ -55,7 +55,6 @@ private fun CoinScreenPrev() {
                 coins = (1..100).map {
                     previewCoinUI
                 },
-
                 ),
             modifier = Modifier.background(MaterialTheme.colorScheme.background)
         )
