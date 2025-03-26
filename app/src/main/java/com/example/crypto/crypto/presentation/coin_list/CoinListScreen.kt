@@ -37,7 +37,11 @@ fun CoinListScreen(
         ) {
             items(state.coins) { coinUi ->
                 CoinListItem(
-                    coinUi = coinUi, onClick = {CoinListAction.OnCoinClick(coinUi) }, modifier = Modifier.fillMaxWidth()
+                    coinUi = coinUi,
+                    onClick = {
+                        onAction(CoinListAction.OnCoinClick(coinUi))
+                    },
+                    modifier = Modifier.fillMaxWidth()
                 )
                 HorizontalDivider()
             }
