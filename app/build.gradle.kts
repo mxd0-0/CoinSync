@@ -36,6 +36,7 @@ android {
             buildConfigField("String", "BASE_URL", "\"https://api.coincap.io/v2/\"")
         }
     }
+
     compileOptions {
         isCoreLibraryDesugaringEnabled = true
         sourceCompatibility = JavaVersion.VERSION_1_8
@@ -77,6 +78,8 @@ dependencies {
     androidTestImplementation(libs.androidx.ui.test.junit4)
 
 
+    implementation(libs.androidx.navigation.compose)
+    implementation(libs.androidx.core.splashscreen)
 
     implementation(libs.androidx.ui.text.google.fonts)
 

@@ -42,6 +42,8 @@ fun AdaptiveCoinListDetailPan(
         }
 
     }
+
+
     val navigator = rememberListDetailPaneScaffoldNavigator<Any>()
     NavigableListDetailPaneScaffold(
         navigator = navigator,
@@ -51,12 +53,9 @@ fun AdaptiveCoinListDetailPan(
                     state = state,
                     onAction = { action ->
                         viewModel.onAction(action)
-
                         when (action) {
                             is CoinListAction.OnCoinClick -> {
-                                navigator.navigateTo(
-                                    pane = ListDetailPaneScaffoldRole.Detail
-                                )
+                                navigator.navigateTo(pane = ListDetailPaneScaffoldRole.Detail)
                             }
                         }
                     }
